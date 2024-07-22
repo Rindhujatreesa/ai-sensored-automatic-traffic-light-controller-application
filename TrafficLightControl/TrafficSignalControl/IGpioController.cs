@@ -1,3 +1,5 @@
+// Takes care of the input signal from the pins.
+// This class IGpioController is used as the interface for both Real and Mock GPIO functionalities
 using System.Device.Gpio;
 
 namespace TrafficSignalControl.Services

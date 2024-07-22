@@ -1,3 +1,4 @@
+//This C# file extracts the pin signal from the GPIO pins and use it to control the traffic light
 using System.Device.Gpio;
 
 namespace TrafficSignalControl.Services

@@ -1,4 +1,7 @@
-﻿using TrafficSignalControl.Services;
+﻿//This C# file is the execution file that enables the application to run
+// It identifies the type of OS and assigns the right GPIO Controller 
+//finally it creates an instance of TrafficControlService namespace and runs the ControlTraffic() method
+using TrafficSignalControl.Services;
 
 namespace TrafficSignalControl
 {
