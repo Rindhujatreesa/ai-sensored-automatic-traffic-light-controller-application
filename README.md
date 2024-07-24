@@ -79,7 +79,7 @@ USE TrafficControlDB;
 
 CREATE TABLE TrafficSensorData (
     Id INT PRIMARY KEY IDENTITY(1,1),
-    VehicleDetected BIT NOT NULL,
+    IsVehiclePresent BIT NOT NULL,
     Timestamp DATETIME DEFAULT GETDATE()
 );
 ```
@@ -87,16 +87,17 @@ CREATE TABLE TrafficSensorData (
 ### Insert sample data
 
 ```sql
-INSERT INTO TrafficSensorData (VehicleDetected) VALUES (0);
-INSERT INTO TrafficSensorData (VehicleDetected) VALUES (1);
+INSERT INTO TrafficSensorData (IsVehiclePresent)
+VALUES
+(0), (0), (0), (1), (1), (1), (1), (1), (1), (0), (0), (0);
 ```
 
 ### Configure the Program.cs file with the Database
 
 ```c#
-string connectionString = "Server=localhost,1433;Database=TrafficControlDB;User Id=sa;Password=YourPassword123;";
+string connectionString = "Server=localhost,1433;Database=TrafficLightControl;User Id=sa;Password=YourPassword123;";
 ```
-
+In the project, the database connection credentials are avoided from being pushing into Git using .gitignore
 ## Usage
 
 To use the application, ensure the database is set up correctly and the connection string in Program.cs is updated. Run the application using dotnet run and observe the console output for traffic control decisions.
