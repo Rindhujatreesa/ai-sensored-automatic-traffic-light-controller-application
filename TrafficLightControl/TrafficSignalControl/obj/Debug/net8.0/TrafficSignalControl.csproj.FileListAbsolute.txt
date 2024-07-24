@@ -64,3 +64,12 @@
 /Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/obj/Debug/net8.0/TrafficSignalControl.pdb
 /Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/obj/Debug/net8.0/TrafficSignalControl.genruntimeconfig.cache
 /Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/obj/Debug/net8.0/ref/TrafficSignalControl.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/DotNetEnv.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/Sprache.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/System.Data.SqlClient.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/runtimes/win-arm64/native/sni.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/runtimes/win-x64/native/sni.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/runtimes/win-x86/native/sni.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/rindhujajohnson/Documents/GitHub/ai-sensored-automatic-traffic-light-controller-application/TrafficLightControl/TrafficSignalControl/bin/Debug/net8.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll

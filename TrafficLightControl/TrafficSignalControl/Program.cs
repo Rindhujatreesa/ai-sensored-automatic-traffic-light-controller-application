@@ -2,14 +2,18 @@
 // It identifies the type of OS and assigns the right GPIO Controller 
 //finally it creates an instance of TrafficControlService namespace and runs the ControlTraffic() method
 using TrafficSignalControl.Services;
-
+using DotNetEnv;
+using System.Collections.Specialized;
 namespace TrafficSignalControl
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Env.Load();
             IGpioController gpioController;
+            string connectionString = Env.GetString("CONNECTION_STRING");
+
 
             if (OperatingSystem.IsMacOS())
             {
@@ -20,7 +24,7 @@ namespace TrafficSignalControl
                 gpioController = new RealGpioController();
             }
 
-            var trafficControlService = new TrafficControlService(gpioController);
+            var trafficControlService = new TrafficControlService(gpioController,connectionString);
             trafficControlService.ControlTraffic();
         }
     }

@@ -3,6 +3,8 @@
 
 using System.Device.Gpio;
 using TrafficSignalControl.Models;
+using System.Data.SqlClient;
+using System.Threading;
 
 namespace TrafficSignalControl.Services
 {
@@ -12,10 +14,12 @@ namespace TrafficSignalControl.Services
         private int _redPin = 17;
         private int _greenPin = 27;
         private int _sensorPin = 22;
+        private readonly string _connectionString;
 
-        public TrafficControlService(IGpioController controller)
+        public TrafficControlService(IGpioController controller, string connectionString)
         {
             _controller = controller;
+            _connectionString = connectionString;
             _controller.OpenPin(_redPin, PinMode.Output);
             _controller.OpenPin(_greenPin, PinMode.Output);
             _controller.OpenPin(_sensorPin, PinMode.Input);
@@ -39,6 +43,16 @@ namespace TrafficSignalControl.Services
                     _controller.Write(_redPin, PinValue.High);
                 }
                 Thread.Sleep(1000);
+            }
+        }
+        private bool GetSensorDataFromDatabase()
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                var command = new SqlCommand("SELECT TOP 1 IsVehiclePresent FROM TrafficSensorData ORDER BY Timestamp DESC", connection);
+                var result = command.ExecuteScalar();
+                return Convert.ToBoolean(result);
             }
         }
     }
