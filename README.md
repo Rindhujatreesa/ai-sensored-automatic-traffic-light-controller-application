@@ -18,4 +18,4 @@ The value will be `True` for a specific traffic when -
 
 And `False` when there is no vehicle in the specific traffic
 
-![AI Generated Traffic Intersection]("img/traffic_graphics.png")
+![AI Generated Traffic Intersection](img/traffic_graphic.png)
