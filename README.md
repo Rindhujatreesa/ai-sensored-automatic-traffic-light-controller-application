@@ -103,5 +103,5 @@ To use the application, ensure the database is set up correctly and the connecti
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/license/mit). See the LICENSE file for details.
+This project is licensed under the [MIT License](https://opensource.org/license/mit). See the [LICENSE](/LICENSE) file for details.
 
