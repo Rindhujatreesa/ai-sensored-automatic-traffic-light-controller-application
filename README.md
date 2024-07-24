@@ -7,3 +7,15 @@ An application that controls traffic signals based on the traffic from each dire
 - C# with .NET platform
 - Visual Studio Code
 - SQL Server for Database Management
+
+## Data and General Purpose Input/Output Pins (GPIO)
+
+In a practical approach, the data required for this application to run properly is a boolean input - `True` or `False`. A sensor or an image processing AI model provides the information about the presence of vehicles along a direction. 
+
+The value will be `True` for a specific traffic when -  
+- There is a vehicle detected in that traffic
+- (or) A pedestrian requests for crossing in the opposite traffic
+
+And `False` when there is no vehicle in the specific traffic
+
+![AI Generated Traffic Intersection]("img/traffic_graphics.png")
